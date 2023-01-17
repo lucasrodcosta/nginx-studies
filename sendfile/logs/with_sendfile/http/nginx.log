@@ -1,0 +1,131 @@
+2023/01/16 18:18:24 [debug] 23#23: epoll: fd:5 ev:0001 d:00007F88849BB7E0
+2023/01/16 18:18:24 [debug] 23#23: accept on 0.0.0.0:8080, ready: 0
+2023/01/16 18:18:24 [debug] 23#23: posix_memalign: 00007F8884A38940:512 @16
+2023/01/16 18:18:24 [debug] 23#23: *4 accept: 192.168.48.1:55318 fd:3
+2023/01/16 18:18:24 [debug] 23#23: *4 event timer add: 3: 60000:389047028
+2023/01/16 18:18:24 [debug] 23#23: *4 reusable connection: 1
+2023/01/16 18:18:24 [debug] 23#23: *4 epoll add event: fd:3 op:1 ev:80002001
+2023/01/16 18:18:24 [debug] 23#23: timer delta: 269276
+2023/01/16 18:18:24 [debug] 23#23: worker cycle
+2023/01/16 18:18:24 [debug] 23#23: epoll timer: 60000
+2023/01/16 18:18:24 [debug] 23#23: epoll: fd:3 ev:0001 d:00007F88849BBBA1
+2023/01/16 18:18:24 [debug] 23#23: *4 http wait request handler
+2023/01/16 18:18:24 [debug] 23#23: *4 malloc: 00007F8884984DB0:1024
+2023/01/16 18:18:24 [debug] 23#23: *4 recv: eof:0, avail:-1
+2023/01/16 18:18:24 [debug] 23#23: *4 recv: fd:3 80 of 1024
+2023/01/16 18:18:24 [debug] 23#23: *4 reusable connection: 0
+2023/01/16 18:18:24 [debug] 23#23: *4 posix_memalign: 00007F8884A7D0F0:4096 @16
+2023/01/16 18:18:24 [debug] 23#23: *4 http process request line
+2023/01/16 18:18:24 [debug] 23#23: *4 http request line: "GET /1K HTTP/1.1"
+2023/01/16 18:18:24 [debug] 23#23: *4 http uri: "/1K"
+2023/01/16 18:18:24 [debug] 23#23: *4 http args: ""
+2023/01/16 18:18:24 [debug] 23#23: *4 http exten: ""
+2023/01/16 18:18:24 [debug] 23#23: *4 posix_memalign: 00007F8884A7E630:4096 @16
+2023/01/16 18:18:24 [debug] 23#23: *4 http process request header line
+2023/01/16 18:18:24 [debug] 23#23: *4 http header: "Host: localhost:8080"
+2023/01/16 18:18:24 [debug] 23#23: *4 http header: "User-Agent: curl/7.79.1"
+2023/01/16 18:18:24 [debug] 23#23: *4 http header: "Accept: */*"
+2023/01/16 18:18:24 [debug] 23#23: *4 http header done
+2023/01/16 18:18:24 [debug] 23#23: *4 event timer del: 3: 389047028
+2023/01/16 18:18:24 [debug] 23#23: *4 generic phase: 0
+2023/01/16 18:18:24 [debug] 23#23: *4 rewrite phase: 1
+2023/01/16 18:18:24 [debug] 23#23: *4 rewrite phase: 2
+2023/01/16 18:18:24 [debug] 23#23: *4 test location: "/"
+2023/01/16 18:18:24 [debug] 23#23: *4 using configuration "/"
+2023/01/16 18:18:24 [debug] 23#23: *4 http cl:-1 max:1048576
+2023/01/16 18:18:24 [debug] 23#23: *4 rewrite phase: 4
+2023/01/16 18:18:24 [debug] 23#23: *4 rewrite phase: 5
+2023/01/16 18:18:24 [debug] 23#23: *4 post rewrite phase: 6
+2023/01/16 18:18:24 [debug] 23#23: *4 generic phase: 7
+2023/01/16 18:18:24 [debug] 23#23: *4 generic phase: 8
+2023/01/16 18:18:24 [debug] 23#23: *4 generic phase: 9
+2023/01/16 18:18:24 [debug] 23#23: *4 access phase: 10
+2023/01/16 18:18:24 [debug] 23#23: *4 access phase: 11
+2023/01/16 18:18:24 [debug] 23#23: *4 access phase: 12
+2023/01/16 18:18:24 [debug] 23#23: *4 access phase: 13
+2023/01/16 18:18:24 [debug] 23#23: *4 lua access handler, uri:"/1K" c:1
+2023/01/16 18:18:24 [debug] 23#23: *4 code cache lookup (key='access_by_lua_nhli_c23aa0a4963a0b0bd5f3b17fd26d55f1', ref=1)
+2023/01/16 18:18:24 [debug] 23#23: *4 code cache hit (key='access_by_lua_nhli_c23aa0a4963a0b0bd5f3b17fd26d55f1', ref=1)
+2023/01/16 18:18:24 [debug] 23#23: *4 lua creating new thread
+2023/01/16 18:18:24 [debug] 23#23: *4 lua reusing cached lua thread 00007F8884922158 (ref 1)
+2023/01/16 18:18:24 [debug] 23#23: *4 lua reset ctx
+2023/01/16 18:18:24 [debug] 23#23: *4 http lua finalize threads
+2023/01/16 18:18:24 [debug] 23#23: *4 http cleanup add: 00007F8884A7E0B8
+2023/01/16 18:18:24 [debug] 23#23: *4 lua run thread, top:0 c:1
+2023/01/16 18:18:24 [error] 23#23: *4 [lua] access_by_lua(nginx.conf:25):2: access_lua_block HTTP, client: 192.168.48.1, server: , request: "GET /1K HTTP/1.1", host: "localhost:8080"
+2023/01/16 18:18:24 [debug] 23#23: *4 lua resume returned 0
+2023/01/16 18:18:24 [debug] 23#23: *4 lua light thread ended normally
+2023/01/16 18:18:24 [debug] 23#23: *4 lua deleting light thread 00007F8884922158 (ref 1)
+2023/01/16 18:18:24 [debug] 23#23: *4 lua caching unused lua thread 00007F8884922158 (ref 1)
+2023/01/16 18:18:24 [debug] 23#23: *4 post access phase: 14
+2023/01/16 18:18:24 [debug] 23#23: *4 generic phase: 15
+2023/01/16 18:18:24 [debug] 23#23: *4 generic phase: 16
+2023/01/16 18:18:24 [debug] 23#23: *4 content phase: 17
+2023/01/16 18:18:24 [debug] 23#23: *4 content phase: 18
+2023/01/16 18:18:24 [debug] 23#23: *4 content phase: 19
+2023/01/16 18:18:24 [debug] 23#23: *4 content phase: 20
+2023/01/16 18:18:24 [debug] 23#23: *4 content phase: 21
+2023/01/16 18:18:24 [debug] 23#23: *4 content phase: 22
+2023/01/16 18:18:24 [debug] 23#23: *4 http filename: "/data/1K"
+2023/01/16 18:18:24 [debug] 23#23: *4 add cleanup: 00007F8884A7EA10
+2023/01/16 18:18:24 [debug] 23#23: *4 http static fd: 4
+2023/01/16 18:18:24 [debug] 23#23: *4 http set discard body
+2023/01/16 18:18:24 [debug] 23#23: *4 lua capture header filter, uri "/1K"
+2023/01/16 18:18:24 [debug] 23#23: *4 HTTP/1.1 200 OK
+Server: openresty/1.21.4.1
+Date: Mon, 16 Jan 2023 18:18:24 GMT
+Content-Type: text/plain
+Content-Length: 1024
+Last-Modified: Mon, 16 Jan 2023 17:17:35 GMT
+Connection: keep-alive
+ETag: "63c586af-400"
+Accept-Ranges: bytes
+2023/01/16 18:18:24 [debug] 23#23: *4 write new buf t:1 f:0 00007F8884A7EBF8, pos 00007F8884A7EBF8, size: 246 file: 0, size: 0
+2023/01/16 18:18:24 [debug] 23#23: *4 http write filter: l:0 f:0 s:246
+2023/01/16 18:18:24 [debug] 23#23: *4 http output filter "/1K?"
+2023/01/16 18:18:24 [debug] 23#23: *4 http copy filter: "/1K?"
+2023/01/16 18:18:24 [debug] 23#23: *4 lua capture body filter, uri "/1K"
+2023/01/16 18:18:24 [debug] 23#23: *4 http postpone filter "/1K?" 00007FFCBEECD670
+2023/01/16 18:18:24 [debug] 23#23: *4 write old buf t:1 f:0 00007F8884A7EBF8, pos 00007F8884A7EBF8, size: 246 file: 0, size: 0
+2023/01/16 18:18:24 [debug] 23#23: *4 write new buf t:0 f:1 0000000000000000, pos 0000000000000000, size: 0 file: 0, size: 1024
+2023/01/16 18:18:24 [debug] 23#23: *4 http write filter: l:1 f:0 s:1270
+2023/01/16 18:18:24 [debug] 23#23: *4 http write filter limit 2097152
+2023/01/16 18:18:24 [debug] 23#23: *4 writev: 246 of 246
+2023/01/16 18:18:24 [debug] 23#23: *4 sendfile: @0 1024
+2023/01/16 18:18:24 [debug] 23#23: *4 sendfile: 1024 of 1024 @0
+2023/01/16 18:18:24 [debug] 23#23: *4 http write filter 0000000000000000
+2023/01/16 18:18:24 [debug] 23#23: *4 http copy filter: 0 "/1K?"
+2023/01/16 18:18:24 [debug] 23#23: *4 http finalize request: 0, "/1K?" a:1, c:1
+192.168.48.1 - - [16/Jan/2023:18:18:24 +0000] "GET /1K HTTP/1.1" 200 1024 "-" "curl/7.79.1"
+2023/01/16 18:18:24 [debug] 23#23: *4 set http keepalive handler
+2023/01/16 18:18:24 [debug] 23#23: *4 http close request
+2023/01/16 18:18:24 [debug] 23#23: *4 lua request cleanup: forcible=0
+2023/01/16 18:18:24 [debug] 23#23: *4 http lua finalize threads
+2023/01/16 18:18:24 [debug] 23#23: *4 http log handler
+2023/01/16 18:18:24 [debug] 23#23: *4 run cleanup: 00007F8884A7EA10
+2023/01/16 18:18:24 [debug] 23#23: *4 file cleanup: fd:4
+2023/01/16 18:18:24 [debug] 23#23: *4 free: 00007F8884A7D0F0, unused: 0
+2023/01/16 18:18:24 [debug] 23#23: *4 free: 00007F8884A7E630, unused: 2075
+2023/01/16 18:18:24 [debug] 23#23: *4 free: 00007F8884984DB0
+2023/01/16 18:18:24 [debug] 23#23: *4 hc free: 0000000000000000
+2023/01/16 18:18:24 [debug] 23#23: *4 hc busy: 0000000000000000 0
+2023/01/16 18:18:24 [debug] 23#23: *4 tcp_nodelay
+2023/01/16 18:18:24 [debug] 23#23: *4 reusable connection: 1
+2023/01/16 18:18:24 [debug] 23#23: *4 event timer add: 3: 75000:389062032
+2023/01/16 18:18:24 [debug] 23#23: timer delta: 4
+2023/01/16 18:18:24 [debug] 23#23: worker cycle
+2023/01/16 18:18:24 [debug] 23#23: epoll timer: 75000
+2023/01/16 18:18:25 [debug] 23#23: epoll: fd:3 ev:2001 d:00007F88849BBBA1
+2023/01/16 18:18:25 [debug] 23#23: *4 http keepalive handler
+2023/01/16 18:18:25 [debug] 23#23: *4 malloc: 00007F8884984DC0:1024
+2023/01/16 18:18:25 [debug] 23#23: *4 recv: eof:1, avail:-1
+2023/01/16 18:18:25 [debug] 23#23: *4 recv: fd:3 0 of 1024
+2023/01/16 18:18:25 [info] 23#23: *4 client 192.168.48.1 closed keepalive connection
+2023/01/16 18:18:25 [debug] 23#23: *4 close http connection: 3
+2023/01/16 18:18:25 [debug] 23#23: *4 event timer del: 3: 389062032
+2023/01/16 18:18:25 [debug] 23#23: *4 reusable connection: 0
+2023/01/16 18:18:25 [debug] 23#23: *4 free: 00007F8884984DC0
+2023/01/16 18:18:25 [debug] 23#23: *4 free: 00007F8884A38940, unused: 136
+2023/01/16 18:18:25 [debug] 23#23: timer delta: 51
+2023/01/16 18:18:25 [debug] 23#23: worker cycle
+2023/01/16 18:18:25 [debug] 23#23: epoll timer: -1

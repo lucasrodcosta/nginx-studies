@@ -1,0 +1,159 @@
+2023/01/16 18:13:55 [debug] 23#23: epoll: fd:6 ev:0001 d:00007F88849BB8D0
+2023/01/16 18:13:55 [debug] 23#23: accept on 0.0.0.0:443, ready: 0
+2023/01/16 18:13:55 [debug] 23#23: posix_memalign: 00007F8884A38030:512 @16
+2023/01/16 18:13:55 [debug] 23#23: *3 accept: 192.168.48.1:37184 fd:3
+2023/01/16 18:13:55 [debug] 23#23: *3 event timer add: 3: 60000:388777612
+2023/01/16 18:13:55 [debug] 23#23: *3 reusable connection: 1
+2023/01/16 18:13:55 [debug] 23#23: *3 epoll add event: fd:3 op:1 ev:80002001
+2023/01/16 18:13:55 [debug] 23#23: timer delta: 241175
+2023/01/16 18:13:55 [debug] 23#23: worker cycle
+2023/01/16 18:13:55 [debug] 23#23: epoll timer: 60000
+2023/01/16 18:13:55 [debug] 23#23: epoll: fd:3 ev:0001 d:00007F88849BBBA0
+2023/01/16 18:13:55 [debug] 23#23: *3 http check ssl handshake
+2023/01/16 18:13:55 [debug] 23#23: *3 http recv(): 1
+2023/01/16 18:13:55 [debug] 23#23: *3 https ssl handshake: 0x16
+2023/01/16 18:13:55 [debug] 23#23: *3 tcp_nodelay
+2023/01/16 18:13:55 [debug] 23#23: *3 reusable connection: 0
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL server name: "localhost"
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL ALPN supported by client: h2
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL ALPN supported by client: http/1.1
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL ALPN selected: http/1.1
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL_do_handshake: -1
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL_get_error: 2
+2023/01/16 18:13:55 [debug] 23#23: timer delta: 14
+2023/01/16 18:13:55 [debug] 23#23: worker cycle
+2023/01/16 18:13:55 [debug] 23#23: epoll timer: 59986
+2023/01/16 18:13:55 [debug] 23#23: epoll: fd:3 ev:0001 d:00007F88849BBBA0
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL handshake handler: 0
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL_do_handshake: 1
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL: TLSv1, cipher: "ECDHE-RSA-AES256-SHA TLSv1 Kx=ECDH Au=RSA Enc=AES(256) Mac=SHA1"
+2023/01/16 18:13:55 [debug] 23#23: *3 reusable connection: 1
+2023/01/16 18:13:55 [debug] 23#23: *3 http wait request handler
+2023/01/16 18:13:55 [debug] 23#23: *3 malloc: 00007F8884A76040:1024
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL_read: 75
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL_read: -1
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL_get_error: 2
+2023/01/16 18:13:55 [debug] 23#23: *3 reusable connection: 0
+2023/01/16 18:13:55 [debug] 23#23: *3 posix_memalign: 00007F8884A7D0E0:4096 @16
+2023/01/16 18:13:55 [debug] 23#23: *3 http process request line
+2023/01/16 18:13:55 [debug] 23#23: *3 http request line: "GET /1K HTTP/1.1"
+2023/01/16 18:13:55 [debug] 23#23: *3 http uri: "/1K"
+2023/01/16 18:13:55 [debug] 23#23: *3 http args: ""
+2023/01/16 18:13:55 [debug] 23#23: *3 http exten: ""
+2023/01/16 18:13:55 [debug] 23#23: *3 posix_memalign: 00007F8884A7E620:4096 @16
+2023/01/16 18:13:55 [debug] 23#23: *3 http process request header line
+2023/01/16 18:13:55 [debug] 23#23: *3 http header: "Host: localhost"
+2023/01/16 18:13:55 [debug] 23#23: *3 http header: "User-Agent: curl/7.79.1"
+2023/01/16 18:13:55 [debug] 23#23: *3 http header: "Accept: */*"
+2023/01/16 18:13:55 [debug] 23#23: *3 http header done
+2023/01/16 18:13:55 [debug] 23#23: *3 event timer del: 3: 388777612
+2023/01/16 18:13:55 [debug] 23#23: *3 generic phase: 0
+2023/01/16 18:13:55 [debug] 23#23: *3 rewrite phase: 1
+2023/01/16 18:13:55 [debug] 23#23: *3 rewrite phase: 2
+2023/01/16 18:13:55 [debug] 23#23: *3 test location: "/"
+2023/01/16 18:13:55 [debug] 23#23: *3 using configuration "/"
+2023/01/16 18:13:55 [debug] 23#23: *3 http cl:-1 max:1048576
+2023/01/16 18:13:55 [debug] 23#23: *3 rewrite phase: 4
+2023/01/16 18:13:55 [debug] 23#23: *3 rewrite phase: 5
+2023/01/16 18:13:55 [debug] 23#23: *3 post rewrite phase: 6
+2023/01/16 18:13:55 [debug] 23#23: *3 generic phase: 7
+2023/01/16 18:13:55 [debug] 23#23: *3 generic phase: 8
+2023/01/16 18:13:55 [debug] 23#23: *3 generic phase: 9
+2023/01/16 18:13:55 [debug] 23#23: *3 access phase: 10
+2023/01/16 18:13:55 [debug] 23#23: *3 access phase: 11
+2023/01/16 18:13:55 [debug] 23#23: *3 access phase: 12
+2023/01/16 18:13:55 [debug] 23#23: *3 access phase: 13
+2023/01/16 18:13:55 [debug] 23#23: *3 lua access handler, uri:"/1K" c:1
+2023/01/16 18:13:55 [debug] 23#23: *3 code cache lookup (key='access_by_lua_nhli_3398e7a566b3a1fa055e4272e61683f3', ref=-1)
+2023/01/16 18:13:55 [debug] 23#23: *3 code cache miss (key='access_by_lua_nhli_3398e7a566b3a1fa055e4272e61683f3', ref=-1)
+2023/01/16 18:13:55 [debug] 23#23: *3 lua creating new thread
+2023/01/16 18:13:55 [debug] 23#23: *3 lua reusing cached lua thread 00007F8884922158 (ref 1)
+2023/01/16 18:13:55 [debug] 23#23: *3 lua reset ctx
+2023/01/16 18:13:55 [debug] 23#23: *3 http lua finalize threads
+2023/01/16 18:13:55 [debug] 23#23: *3 http cleanup add: 00007F8884A7E0A8
+2023/01/16 18:13:55 [debug] 23#23: *3 lua run thread, top:0 c:1
+2023/01/16 18:13:55 [error] 23#23: *3 [lua] access_by_lua(nginx.conf:45):2: access_lua_block HTTPS, client: 192.168.48.1, server: , request: "GET /1K HTTP/1.1", host: "localhost"
+2023/01/16 18:13:55 [debug] 23#23: *3 lua resume returned 0
+2023/01/16 18:13:55 [debug] 23#23: *3 lua light thread ended normally
+2023/01/16 18:13:55 [debug] 23#23: *3 lua deleting light thread 00007F8884922158 (ref 1)
+2023/01/16 18:13:55 [debug] 23#23: *3 lua caching unused lua thread 00007F8884922158 (ref 1)
+2023/01/16 18:13:55 [debug] 23#23: *3 post access phase: 14
+2023/01/16 18:13:55 [debug] 23#23: *3 generic phase: 15
+2023/01/16 18:13:55 [debug] 23#23: *3 generic phase: 16
+2023/01/16 18:13:55 [debug] 23#23: *3 content phase: 17
+2023/01/16 18:13:55 [debug] 23#23: *3 content phase: 18
+2023/01/16 18:13:55 [debug] 23#23: *3 content phase: 19
+2023/01/16 18:13:55 [debug] 23#23: *3 content phase: 20
+2023/01/16 18:13:55 [debug] 23#23: *3 content phase: 21
+2023/01/16 18:13:55 [debug] 23#23: *3 content phase: 22
+2023/01/16 18:13:55 [debug] 23#23: *3 http filename: "/data/1K"
+2023/01/16 18:13:55 [debug] 23#23: *3 add cleanup: 00007F8884A7EA00
+2023/01/16 18:13:55 [debug] 23#23: *3 http static fd: 4
+2023/01/16 18:13:55 [debug] 23#23: *3 http set discard body
+2023/01/16 18:13:55 [debug] 23#23: *3 lua capture header filter, uri "/1K"
+2023/01/16 18:13:55 [debug] 23#23: *3 HTTP/1.1 200 OK
+Server: openresty/1.21.4.1
+Date: Mon, 16 Jan 2023 18:13:55 GMT
+Content-Type: text/plain
+Content-Length: 1024
+Last-Modified: Mon, 16 Jan 2023 17:17:35 GMT
+Connection: keep-alive
+ETag: "63c586af-400"
+Accept-Ranges: bytes
+2023/01/16 18:13:55 [debug] 23#23: *3 write new buf t:1 f:0 00007F8884A7EBE8, pos 00007F8884A7EBE8, size: 246 file: 0, size: 0
+2023/01/16 18:13:55 [debug] 23#23: *3 http write filter: l:0 f:0 s:246
+2023/01/16 18:13:55 [debug] 23#23: *3 http output filter "/1K?"
+2023/01/16 18:13:55 [debug] 23#23: *3 http copy filter: "/1K?"
+2023/01/16 18:13:55 [debug] 23#23: *3 read: 4, 00007F8884A7EDD8, 1024, 0
+2023/01/16 18:13:55 [debug] 23#23: *3 lua capture body filter, uri "/1K"
+2023/01/16 18:13:55 [debug] 23#23: *3 http postpone filter "/1K?" 00007F8884A7F1D8
+2023/01/16 18:13:55 [debug] 23#23: *3 write old buf t:1 f:0 00007F8884A7EBE8, pos 00007F8884A7EBE8, size: 246 file: 0, size: 0
+2023/01/16 18:13:55 [debug] 23#23: *3 write new buf t:1 f:1 00007F8884A7EDD8, pos 00007F8884A7EDD8, size: 1024 file: 0, size: 1024
+2023/01/16 18:13:55 [debug] 23#23: *3 http write filter: l:1 f:0 s:1270
+2023/01/16 18:13:55 [debug] 23#23: *3 http write filter limit 2097152
+2023/01/16 18:13:55 [debug] 23#23: *3 posix_memalign: 00007F8884A38700:512 @16
+2023/01/16 18:13:55 [debug] 23#23: *3 malloc: 00007F88849AF790:16384
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL buf copy: 246
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL buf copy: 1024
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL to write: 1270
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL_write: 1270
+2023/01/16 18:13:55 [debug] 23#23: *3 http write filter 0000000000000000
+2023/01/16 18:13:55 [debug] 23#23: *3 http copy filter: 0 "/1K?"
+2023/01/16 18:13:55 [debug] 23#23: *3 http finalize request: 0, "/1K?" a:1, c:1
+2023/01/16 18:13:55 [debug] 23#23: *3 set http keepalive handler
+2023/01/16 18:13:55 [debug] 23#23: *3 http close request
+2023/01/16 18:13:55 [debug] 23#23: *3 lua request cleanup: forcible=0
+2023/01/16 18:13:55 [debug] 23#23: *3 http lua finalize threads
+2023/01/16 18:13:55 [debug] 23#23: *3 http log handler
+2023/01/16 18:13:55 [debug] 23#23: *3 run cleanup: 00007F8884A7EA00
+2023/01/16 18:13:55 [debug] 23#23: *3 file cleanup: fd:4
+2023/01/16 18:13:55 [debug] 23#23: *3 free: 00007F8884A7D0E0, unused: 0
+2023/01/16 18:13:55 [debug] 23#23: *3 free: 00007F8884A7E620, unused: 939
+2023/01/16 18:13:55 [debug] 23#23: *3 free: 00007F8884A76040
+2023/01/16 18:13:55 [debug] 23#23: *3 hc free: 0000000000000000
+192.168.48.1 - - [16/Jan/2023:18:13:55 +0000] "GET /1K HTTP/1.1" 200 1024 "-" "curl/7.79.1"
+2023/01/16 18:13:55 [debug] 23#23: *3 hc busy: 0000000000000000 0
+2023/01/16 18:13:55 [debug] 23#23: *3 free: 00007F88849AF790
+2023/01/16 18:13:55 [debug] 23#23: *3 reusable connection: 1
+2023/01/16 18:13:55 [debug] 23#23: *3 event timer add: 3: 75000:388792683
+2023/01/16 18:13:55 [debug] 23#23: timer delta: 57
+2023/01/16 18:13:55 [debug] 23#23: worker cycle
+2023/01/16 18:13:55 [debug] 23#23: epoll timer: 75000
+2023/01/16 18:13:55 [debug] 23#23: epoll: fd:3 ev:2001 d:00007F88849BBBA0
+2023/01/16 18:13:55 [debug] 23#23: *3 http keepalive handler
+2023/01/16 18:13:55 [debug] 23#23: *3 malloc: 00007F8884A76050:1024
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL_read: 0
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL_get_error: 6
+2023/01/16 18:13:55 [debug] 23#23: *3 peer shutdown SSL cleanly
+2023/01/16 18:13:55 [info] 23#23: *3 client 192.168.48.1 closed keepalive connection
+2023/01/16 18:13:55 [debug] 23#23: *3 close http connection: 3
+2023/01/16 18:13:55 [debug] 23#23: *3 SSL_shutdown: 1
+2023/01/16 18:13:55 [debug] 23#23: *3 event timer del: 3: 388792683
+2023/01/16 18:13:55 [debug] 23#23: *3 reusable connection: 0
+2023/01/16 18:13:55 [debug] 23#23: *3 free: 00007F8884A76050
+2023/01/16 18:13:55 [debug] 23#23: *3 free: 0000000000000000
+2023/01/16 18:13:55 [debug] 23#23: *3 free: 00007F8884A38030, unused: 8
+2023/01/16 18:13:55 [debug] 23#23: *3 free: 00007F8884A38700, unused: 400
+2023/01/16 18:13:55 [debug] 23#23: timer delta: 69
+2023/01/16 18:13:55 [debug] 23#23: worker cycle
+2023/01/16 18:13:55 [debug] 23#23: epoll timer: -1

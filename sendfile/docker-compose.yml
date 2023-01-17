@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  nginx:
+    image: openresty-with-debug:latest
+    volumes:
+      - ./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf
+      - ./ssl/server.crt:/usr/local/openresty/nginx/conf/server.crt
+      - ./ssl/server.key:/usr/local/openresty/nginx/conf/server.key
+      - ./data:/data
+    ports:
+      - "8080:8080"
+      - "443:443"
