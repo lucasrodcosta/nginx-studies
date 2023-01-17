@@ -110,6 +110,6 @@ From the strace logs we can see the read and write operations in operational sys
 
 ### sendfile with proxy_pass?
 
-It doesn't works. The `sendfile` only works for static files from a storage.
+It doesn't works. The `sendfile` only works for static files from a storage. Check the logs in [logs/upstream](https://gitlab.globoi.com/lucas.costa/nginx-sendfile-study/-/tree/master/logs/upstream).
 
-Check the logs in [logs/upstream](https://gitlab.globoi.com/lucas.costa/nginx-sendfile-study/-/tree/master/logs/upstream)
+**BUT** you can use some kind of micro caching on tmpfs. In this case, the `sendfile` will be useful.
