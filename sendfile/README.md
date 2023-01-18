@@ -79,9 +79,9 @@ It's interesting to see the existence of a cache to Lua codes:
 
 ![Lua cache](/sendfile/img/lua_cache.png)
 
-### read/write when `sendfile off`
+### read+write when `sendfile off`
 
-![Nginx read/write](/sendfile/img/nginx_read_write.png)
+![Nginx read+write](/sendfile/img/nginx_read_write.png)
 
 From the strace logs, it's possible to see how it occurs at operational system:
 
@@ -91,7 +91,7 @@ From the strace logs, it's possible to see how it occurs at operational system:
 
 :point_right: The same happens in HTTP and HTTPS
 
-### sendfile with HTTP replaces read/write
+### sendfile with HTTP replaces read+write
 
 ![Nginx sendfile](/sendfile/img/nginx_sendfile.png)
 
@@ -99,7 +99,7 @@ From the strace logs, it's possible to see how it occurs at operational system:
 
 :point_right: It's also possible to check that less buffers are used
 
-### sendfile with HTTPS don't works due to SSL cryptography
+### sendfile with HTTPS doesn't work due to SSL cryptography
 
 ![Nginx HTTPS](/sendfile/img/nginx_https.png)
 
@@ -110,6 +110,8 @@ From the strace logs we can see the read and write operations in operational sys
 
 ### sendfile with proxy_pass?
 
-It doesn't works. The `sendfile` only works for static files from a storage. Check the logs in [logs/upstream](https://github.com/lucasrodcosta/nginx-studies/tree/main/sendfile/logs/upstream).
+The `sendfile` only works for static files from a storage.
 
-**BUT** you can use some kind of micro caching on tmpfs. In this case, the `sendfile` will be useful.
+But if you use some kind of caching, the `sendfile` will work like a charm.
+
+Check the logs in [logs/upstream](https://github.com/lucasrodcosta/nginx-studies/tree/main/sendfile/logs/upstream).

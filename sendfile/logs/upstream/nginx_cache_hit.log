@@ -1,0 +1,148 @@
+2023/01/18 14:09:49 [debug] 24#24: epoll: fd:5 ev:0001 d:00007F178AC20B10
+2023/01/18 14:09:49 [debug] 24#24: accept on 0.0.0.0:8080, ready: 0
+2023/01/18 14:09:49 [debug] 24#24: posix_memalign: 00007F178A1CB940:512 @16
+2023/01/18 14:09:49 [debug] 24#24: *2 accept: 172.22.0.1:41176 fd:3
+2023/01/18 14:09:49 [debug] 24#24: *2 event timer add: 3: 60000:1511200
+2023/01/18 14:09:49 [debug] 24#24: *2 reusable connection: 1
+2023/01/18 14:09:49 [debug] 24#24: *2 epoll add event: fd:3 op:1 ev:80002001
+2023/01/18 14:09:49 [debug] 24#24: timer delta: 28956
+2023/01/18 14:09:49 [debug] 24#24: worker cycle
+2023/01/18 14:09:49 [debug] 24#24: epoll timer: 60000
+2023/01/18 14:09:49 [debug] 24#24: epoll: fd:3 ev:0001 d:00007F178AC20FC1
+2023/01/18 14:09:49 [debug] 24#24: *2 http wait request handler
+2023/01/18 14:09:49 [debug] 24#24: *2 malloc: 00007F178A1CEB30:1024
+2023/01/18 14:09:49 [debug] 24#24: *2 recv: eof:0, avail:-1
+2023/01/18 14:09:49 [debug] 24#24: *2 recv: fd:3 91 of 1024
+2023/01/18 14:09:49 [debug] 24#24: *2 reusable connection: 0
+2023/01/18 14:09:49 [debug] 24#24: *2 posix_memalign: 00007F178AD032D0:4096 @16
+2023/01/18 14:09:49 [debug] 24#24: *2 http process request line
+2023/01/18 14:09:49 [debug] 24#24: *2 http request line: "GET /proxy_pass/1K HTTP/1.1"
+2023/01/18 14:09:49 [debug] 24#24: *2 http uri: "/proxy_pass/1K"
+2023/01/18 14:09:49 [debug] 24#24: *2 http args: ""
+2023/01/18 14:09:49 [debug] 24#24: *2 http exten: ""
+2023/01/18 14:09:49 [debug] 24#24: *2 posix_memalign: 00007F178AD04810:4096 @16
+2023/01/18 14:09:49 [debug] 24#24: *2 http process request header line
+2023/01/18 14:09:49 [debug] 24#24: *2 http header: "Host: localhost:8080"
+2023/01/18 14:09:49 [debug] 24#24: *2 http header: "User-Agent: curl/7.79.1"
+2023/01/18 14:09:49 [debug] 24#24: *2 http header: "Accept: */*"
+2023/01/18 14:09:49 [debug] 24#24: *2 http header done
+2023/01/18 14:09:49 [debug] 24#24: *2 event timer del: 3: 1511200
+2023/01/18 14:09:49 [debug] 24#24: *2 generic phase: 0
+2023/01/18 14:09:49 [debug] 24#24: *2 rewrite phase: 1
+2023/01/18 14:09:49 [debug] 24#24: *2 rewrite phase: 2
+2023/01/18 14:09:49 [debug] 24#24: *2 test location: "/"
+2023/01/18 14:09:49 [debug] 24#24: *2 test location: ~ "^/proxy_pass/(?P<file>.*)$"
+2023/01/18 14:09:49 [debug] 24#24: *2 http regex set $file to "1K"
+2023/01/18 14:09:49 [debug] 24#24: *2 using configuration "^/proxy_pass/(?P<file>.*)$"
+2023/01/18 14:09:49 [debug] 24#24: *2 http cl:-1 max:1048576
+2023/01/18 14:09:49 [debug] 24#24: *2 rewrite phase: 4
+2023/01/18 14:09:49 [debug] 24#24: *2 rewrite phase: 5
+2023/01/18 14:09:49 [debug] 24#24: *2 http cleanup add: 00007F178AD04278
+2023/01/18 14:09:49 [debug] 24#24: *2 code cache lookup (key='set_by_lua_nhli_bd43c489cb1cbd071d4ddbe1c64801dc', ref=1)
+2023/01/18 14:09:49 [debug] 24#24: *2 code cache hit (key='set_by_lua_nhli_bd43c489cb1cbd071d4ddbe1c64801dc', ref=1)
+2023/01/18 14:09:49 [debug] 24#24: *2 http script value (post filter): "localhost/proxy_pass/1K"
+2023/01/18 14:09:49 [debug] 24#24: *2 http script set $cache_key
+2023/01/18 14:09:49 [debug] 24#24: *2 post rewrite phase: 6
+2023/01/18 14:09:49 [debug] 24#24: *2 generic phase: 7
+2023/01/18 14:09:49 [debug] 24#24: *2 generic phase: 8
+2023/01/18 14:09:49 [debug] 24#24: *2 generic phase: 9
+2023/01/18 14:09:49 [debug] 24#24: *2 access phase: 10
+2023/01/18 14:09:49 [debug] 24#24: *2 access phase: 11
+2023/01/18 14:09:49 [debug] 24#24: *2 access phase: 12
+2023/01/18 14:09:49 [debug] 24#24: *2 post access phase: 13
+2023/01/18 14:09:49 [debug] 24#24: *2 generic phase: 14
+2023/01/18 14:09:49 [debug] 24#24: *2 generic phase: 15
+2023/01/18 14:09:49 [debug] 24#24: *2 http script copy: "http://my_upstream/"
+2023/01/18 14:09:49 [debug] 24#24: *2 http script var: "1K"
+2023/01/18 14:09:49 [debug] 24#24: *2 http init upstream, client timer: 0
+2023/01/18 14:09:49 [debug] 24#24: *2 epoll add event: fd:3 op:3 ev:80002005
+2023/01/18 14:09:49 [debug] 24#24: *2 http script var: "localhost/proxy_pass/1K"
+2023/01/18 14:09:49 [debug] 24#24: *2 http cache key: "localhost/proxy_pass/1K"
+2023/01/18 14:09:49 [debug] 24#24: *2 add cleanup: 00007F178AD05798
+2023/01/18 14:09:49 [debug] 24#24: shmtx lock
+2023/01/18 14:09:49 [debug] 24#24: shmtx unlock
+2023/01/18 14:09:49 [debug] 24#24: *2 http file cache exists: 0 e:1
+2023/01/18 14:09:49 [debug] 24#24: *2 cache file: "/opt/nginx_cache/2/dd/d6efdad814ae698206cef41c48b7fdd2"
+2023/01/18 14:09:49 [debug] 24#24: *2 posix_memalign: 00007F178ACFA350:4096 @16
+2023/01/18 14:09:49 [debug] 24#24: *2 add cleanup: 00007F178AD057E8
+2023/01/18 14:09:49 [debug] 24#24: *2 http file cache fd: 9
+2023/01/18 14:09:49 [debug] 24#24: *2 read: 9, 00007F178ACFA3D8, 607, 0
+2023/01/18 14:09:49 [debug] 24#24: shmtx lock
+2023/01/18 14:09:49 [debug] 24#24: shmtx unlock
+2023/01/18 14:09:49 [debug] 24#24: *2 http upstream cache: 0
+2023/01/18 14:09:49 [debug] 24#24: *2 http proxy status 200 "200 OK"
+2023/01/18 14:09:49 [debug] 24#24: *2 http proxy header: "Server: openresty/1.21.4.1"
+2023/01/18 14:09:49 [debug] 24#24: *2 http proxy header: "Date: Wed, 18 Jan 2023 14:02:58 GMT"
+2023/01/18 14:09:49 [debug] 24#24: *2 http proxy header: "Content-Type: text/plain"
+2023/01/18 14:09:49 [debug] 24#24: *2 http proxy header: "Content-Length: 1024"
+2023/01/18 14:09:49 [debug] 24#24: *2 http proxy header: "Last-Modified: Tue, 17 Jan 2023 19:49:30 GMT"
+2023/01/18 14:09:49 [debug] 24#24: *2 http proxy header: "Connection: close"
+2023/01/18 14:09:49 [debug] 24#24: *2 http proxy header: "ETag: "63c6fbca-400""
+2023/01/18 14:09:49 [debug] 24#24: *2 http proxy header: "Accept-Ranges: bytes"
+2023/01/18 14:09:49 [debug] 24#24: *2 http proxy header done
+2023/01/18 14:09:49 [debug] 24#24: *2 http file cache send: /opt/nginx_cache/2/dd/d6efdad814ae698206cef41c48b7fdd2
+2023/01/18 14:09:49 [debug] 24#24: *2 HTTP/1.1 200 OK
+Server: openresty/1.21.4.1
+Date: Wed, 18 Jan 2023 14:09:49 GMT
+Content-Type: text/plain
+Content-Length: 1024
+Connection: keep-alive
+Last-Modified: Tue, 17 Jan 2023 19:49:30 GMT
+ETag: "63c6fbca-400"
+Accept-Ranges: bytes
+2023/01/18 14:09:49 [debug] 24#24: *2 write new buf t:1 f:0 00007F178ACFAAC0, pos 00007F178ACFAAC0, size: 246 file: 0, size: 0
+2023/01/18 14:09:49 [debug] 24#24: *2 http write filter: l:0 f:0 s:246
+2023/01/18 14:09:49 [debug] 24#24: *2 http output filter "/proxy_pass/1K?"
+2023/01/18 14:09:49 [debug] 24#24: *2 http copy filter: "/proxy_pass/1K?"
+2023/01/18 14:09:49 [debug] 24#24: *2 http postpone filter "/proxy_pass/1K?" 00007FFE4CA94050
+2023/01/18 14:09:49 [debug] 24#24: *2 write old buf t:1 f:0 00007F178ACFAAC0, pos 00007F178ACFAAC0, size: 246 file: 0, size: 0
+2023/01/18 14:09:49 [debug] 24#24: *2 write new buf t:0 f:1 0000000000000000, pos 0000000000000000, size: 0 file: 607, size: 1024
+2023/01/18 14:09:49 [debug] 24#24: *2 http write filter: l:1 f:0 s:1270
+2023/01/18 14:09:49 [debug] 24#24: *2 http write filter limit 2097152
+2023/01/18 14:09:49 [debug] 24#24: *2 writev: 246 of 246
+2023/01/18 14:09:49 [debug] 24#24: *2 sendfile: @607 1024
+2023/01/18 14:09:49 [debug] 24#24: *2 sendfile: 1024 of 1024 @607
+2023/01/18 14:09:49 [debug] 24#24: *2 http write filter 0000000000000000
+2023/01/18 14:09:49 [debug] 24#24: *2 http copy filter: 0 "/proxy_pass/1K?"
+2023/01/18 14:09:49 [debug] 24#24: *2 http finalize request: 0, "/proxy_pass/1K?" a:1, c:2
+2023/01/18 14:09:49 [debug] 24#24: *2 http request count:2 blk:0
+2023/01/18 14:09:49 [debug] 24#24: *2 http finalize request: -4, "/proxy_pass/1K?" a:1, c:1
+2023/01/18 14:09:49 [debug] 24#24: *2 set http keepalive handler
+2023/01/18 14:09:49 [debug] 24#24: *2 http close request
+2023/01/18 14:09:49 [debug] 24#24: *2 lua request cleanup: forcible=0
+2023/01/18 14:09:49 [debug] 24#24: *2 http lua finalize threads
+2023/01/18 14:09:49 [debug] 24#24: *2 http log handler
+time="2023-01-18T14:09:49+00:00" remote_addr="172.22.0.1" req="GET /proxy_pass/1K HTTP/1.1" status="200" req_time="0.000" bytes_sent="1024" up_cache_status="HIT" up_status="-" up_addr"-" up_resp_time="-" ref="-" ua="curl/7.79.1" scheme="http"
+2023/01/18 14:09:49 [debug] 24#24: *2 run cleanup: 00007F178AD057E8
+2023/01/18 14:09:49 [debug] 24#24: *2 file cleanup: fd:9
+2023/01/18 14:09:49 [debug] 24#24: *2 run cleanup: 00007F178AD05798
+2023/01/18 14:09:49 [debug] 24#24: *2 http file cache cleanup
+2023/01/18 14:09:49 [debug] 24#24: *2 http file cache free, fd: 9
+2023/01/18 14:09:49 [debug] 24#24: shmtx lock
+2023/01/18 14:09:49 [debug] 24#24: shmtx unlock
+2023/01/18 14:09:49 [debug] 24#24: *2 free: 00007F178AD032D0, unused: 4
+2023/01/18 14:09:49 [debug] 24#24: *2 free: 00007F178AD04810, unused: 10
+2023/01/18 14:09:49 [debug] 24#24: *2 free: 00007F178ACFA350, unused: 1465
+2023/01/18 14:09:49 [debug] 24#24: *2 free: 00007F178A1CEB30
+2023/01/18 14:09:49 [debug] 24#24: *2 hc free: 0000000000000000
+2023/01/18 14:09:49 [debug] 24#24: *2 hc busy: 0000000000000000 0
+2023/01/18 14:09:49 [debug] 24#24: *2 tcp_nodelay
+2023/01/18 14:09:49 [debug] 24#24: *2 reusable connection: 1
+2023/01/18 14:09:49 [debug] 24#24: *2 event timer add: 3: 75000:1526208
+2023/01/18 14:09:49 [debug] 24#24: timer delta: 8
+2023/01/18 14:09:49 [debug] 24#24: worker cycle
+2023/01/18 14:09:49 [debug] 24#24: epoll timer: 75000
+2023/01/18 14:09:49 [debug] 24#24: epoll: fd:3 ev:2005 d:00007F178AC20FC1
+2023/01/18 14:09:49 [debug] 24#24: *2 http keepalive handler
+2023/01/18 14:09:49 [debug] 24#24: *2 malloc: 00007F178AC9D060:1024
+2023/01/18 14:09:49 [debug] 24#24: *2 recv: eof:1, avail:-1
+2023/01/18 14:09:49 [debug] 24#24: *2 recv: fd:3 0 of 1024
+2023/01/18 14:09:49 [info] 24#24: *2 client 172.22.0.1 closed keepalive connection
+2023/01/18 14:09:49 [debug] 24#24: *2 close http connection: 3
+2023/01/18 14:09:49 [debug] 24#24: *2 event timer del: 3: 1526208
+2023/01/18 14:09:49 [debug] 24#24: *2 reusable connection: 0
+2023/01/18 14:09:49 [debug] 24#24: *2 free: 00007F178AC9D060
+2023/01/18 14:09:49 [debug] 24#24: *2 free: 00007F178A1CB940, unused: 136
+2023/01/18 14:09:49 [debug] 24#24: timer delta: 71
+2023/01/18 14:09:49 [debug] 24#24: worker cycle
+2023/01/18 14:09:49 [debug] 24#24: epoll timer: -1
