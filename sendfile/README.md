@@ -1,65 +1,12 @@
 # sendfile
 
-- [Requirements to run locally](#Requirements)
-- [How to run locally](#how-to-run)
-- [Notes and conclusions](#notes)
-
-## Requirements
-
-An OpenResty docker image with debug flag and [strace](https://strace.io/).
-
-1. Clone the [docker-openresty repo](https://hub.docker.com/r/openresty/openresty)
-
-2. Add the flag `--with-debug` inside the `RESTY_CONFIG_OPTIONS` in file `alpine/Dockerfile`:
-
-    ```
-    ARG RESTY_CONFIG_OPTIONS="\
-    --with-debug \
-    --with-compat \
-    // other lines
-    ```
-
-3. Add the instruction `RUN apk add strace` before the copy of Nginx conf files in `alpine/Dockerfile`:
-
-    ```
-    # Add additional binaries into PATH for convenience
-    ENV PATH=$PATH:/usr/local/openresty/luajit/bin:/usr/local/openresty/nginx/sbin:/usr/local/openresty/bin
-
-    RUN apk add strace
-
-    # Copy nginx configuration files
-    COPY nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
-    ```
-
-4. Build the Nginx:
-
-    ```
-    docker build -t openresty-with-debug:latest -f alpine/Dockerfile .
-    ```
-
 ## How to run
 
-1. Run Nginx:
+1. Run Nginx and attach the strace. [Instructions here](https://github.com/lucasrodcosta/nginx-studies#how-to-run).
 
-    ```
-    make run
-    ```
+2. Make the HTTP and HTTPS requests and check the logs:
 
-2. In another terminal, attach the strace process to Nginx:
-
-    ```
-    make strace
-    ```
-
-3. In another terminal, reload the Nginx:
-
-    ```
-    make reload
-    ```
-
-4. Make the HTTP and HTTPS requests and check the logs:
-
-    ```
+    ```bash
     # HTTP
     curl -v -s "http://localhost:8080/1K" -o /dev/null
 
@@ -71,7 +18,7 @@ An OpenResty docker image with debug flag and [strace](https://strace.io/).
 
 ### Nginx phases
 
-From the logs it's possible to check the Nginx execution phases (rewrite > post rewrite > access > post access > content > log):
+From logs it's possible to check the Nginx execution phases (rewrite > post rewrite > access > post access > content > log):
 
 ![Nginx phases](/sendfile/img/nginx_phases.png)
 
