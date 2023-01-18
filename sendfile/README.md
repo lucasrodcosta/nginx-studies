@@ -16,16 +16,6 @@
 
 ## Notes
 
-### Nginx phases
-
-From logs it's possible to check the Nginx execution phases (rewrite > post rewrite > access > post access > content > log):
-
-![Nginx phases](/sendfile/img/nginx_phases.png)
-
-It's interesting to see the existence of a cache to Lua codes:
-
-![Lua cache](/sendfile/img/lua_cache.png)
-
 ### read+write when `sendfile off`
 
 ![Nginx read+write](/sendfile/img/nginx_read_write.png)
