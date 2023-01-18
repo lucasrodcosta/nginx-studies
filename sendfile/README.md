@@ -20,7 +20,7 @@
 
 ![Nginx read+write](/sendfile/img/nginx_read_write.png)
 
-From the strace logs, it's possible to see how it occurs at operational system:
+From the strace logs, it's possible to see how it occurs at operating system:
 
 ![strace read](/sendfile/img/strace_read.png)
 
@@ -40,7 +40,7 @@ From the strace logs, it's possible to see how it occurs at operational system:
 
 ![Nginx HTTPS](/sendfile/img/nginx_https.png)
 
-From the strace logs we can see the read and write operations in operational system
+From the strace logs we can see the read and write operations in operating system:
 
 ![strace read HTTPS](/sendfile/img/strace_read_https.png)
 ![strace write HTTPS](/sendfile/img/strace_write_https.png)
