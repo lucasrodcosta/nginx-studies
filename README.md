@@ -6,8 +6,7 @@ Each directory is a study, with a README file containing the instructions to rep
 notes.
 
 - [sendfile](https://github.com/lucasrodcosta/nginx-studies/tree/main/sendfile)
-- TODO: tcp_nopush
-- TODO: tcp_nodelay
+- [tcp_nopush](https://github.com/lucasrodcosta/nginx-studies/tree/main/tcp_nopush)
 - TODO: kTLS
 - TODO: http/2
 - TODO: http/3

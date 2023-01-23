@@ -1,0 +1,112 @@
+2023/01/23 19:51:41 [debug] 22#22: epoll: fd:5 ev:0001 d:00007F92D0AFB8B0
+2023/01/23 19:51:41 [debug] 22#22: accept on 0.0.0.0:8080, ready: 0
+2023/01/23 19:51:41 [debug] 22#22: posix_memalign: 00007F92D0AC06D0:512 @16
+2023/01/23 19:51:41 [debug] 22#22: *1 accept: 172.28.0.1:36442 fd:3
+2023/01/23 19:51:41 [debug] 22#22: *1 event timer add: 3: 60000:133235737
+2023/01/23 19:51:41 [debug] 22#22: *1 reusable connection: 1
+2023/01/23 19:51:41 [debug] 22#22: *1 epoll add event: fd:3 op:1 ev:80002001
+2023/01/23 19:51:41 [debug] 22#22: timer delta: 5644
+2023/01/23 19:51:41 [debug] 22#22: worker cycle
+2023/01/23 19:51:41 [debug] 22#22: epoll timer: 60000
+2023/01/23 19:51:41 [debug] 22#22: epoll: fd:3 ev:0001 d:00007F92D0AFBB80
+2023/01/23 19:51:41 [debug] 22#22: *1 http wait request handler
+2023/01/23 19:51:41 [debug] 22#22: *1 malloc: 00007F92D0BE3590:1024
+2023/01/23 19:51:41 [debug] 22#22: *1 recv: eof:0, avail:-1
+2023/01/23 19:51:41 [debug] 22#22: *1 recv: fd:3 90 of 1024
+2023/01/23 19:51:41 [debug] 22#22: *1 reusable connection: 0
+2023/01/23 19:51:41 [debug] 22#22: *1 posix_memalign: 00007F92D0BBA1E0:4096 @16
+2023/01/23 19:51:41 [debug] 22#22: *1 http process request line
+2023/01/23 19:51:41 [debug] 22#22: *1 http request line: "GET /nopush_on/1K HTTP/1.1"
+2023/01/23 19:51:41 [debug] 22#22: *1 http uri: "/nopush_on/1K"
+2023/01/23 19:51:41 [debug] 22#22: *1 http args: ""
+2023/01/23 19:51:41 [debug] 22#22: *1 http exten: ""
+2023/01/23 19:51:41 [debug] 22#22: *1 posix_memalign: 00007F92D0BBB720:4096 @16
+2023/01/23 19:51:41 [debug] 22#22: *1 http process request header line
+2023/01/23 19:51:41 [debug] 22#22: *1 http header: "Host: localhost:8080"
+2023/01/23 19:51:41 [debug] 22#22: *1 http header: "User-Agent: curl/7.79.1"
+2023/01/23 19:51:41 [debug] 22#22: *1 http header: "Accept: */*"
+2023/01/23 19:51:41 [debug] 22#22: *1 http header done
+2023/01/23 19:51:41 [debug] 22#22: *1 event timer del: 3: 133235737
+2023/01/23 19:51:41 [debug] 22#22: *1 generic phase: 0
+2023/01/23 19:51:41 [debug] 22#22: *1 rewrite phase: 1
+2023/01/23 19:51:41 [debug] 22#22: *1 rewrite phase: 2
+2023/01/23 19:51:41 [debug] 22#22: *1 test location: "/nopush_on"
+2023/01/23 19:51:41 [debug] 22#22: *1 using configuration "/nopush_on"
+2023/01/23 19:51:41 [debug] 22#22: *1 http cl:-1 max:1048576
+2023/01/23 19:51:41 [debug] 22#22: *1 rewrite phase: 4
+2023/01/23 19:51:41 [debug] 22#22: *1 rewrite phase: 5
+2023/01/23 19:51:41 [debug] 22#22: *1 post rewrite phase: 6
+2023/01/23 19:51:41 [debug] 22#22: *1 generic phase: 7
+2023/01/23 19:51:41 [debug] 22#22: *1 generic phase: 8
+2023/01/23 19:51:41 [debug] 22#22: *1 generic phase: 9
+2023/01/23 19:51:41 [debug] 22#22: *1 access phase: 10
+2023/01/23 19:51:41 [debug] 22#22: *1 access phase: 11
+2023/01/23 19:51:41 [debug] 22#22: *1 access phase: 12
+2023/01/23 19:51:41 [debug] 22#22: *1 post access phase: 13
+2023/01/23 19:51:41 [debug] 22#22: *1 generic phase: 14
+2023/01/23 19:51:41 [debug] 22#22: *1 generic phase: 15
+2023/01/23 19:51:41 [debug] 22#22: *1 content phase: 16
+2023/01/23 19:51:41 [debug] 22#22: *1 content phase: 17
+2023/01/23 19:51:41 [debug] 22#22: *1 content phase: 18
+2023/01/23 19:51:41 [debug] 22#22: *1 content phase: 19
+2023/01/23 19:51:41 [debug] 22#22: *1 content phase: 20
+2023/01/23 19:51:41 [debug] 22#22: *1 content phase: 21
+2023/01/23 19:51:41 [debug] 22#22: *1 http filename: "/data//1K"
+2023/01/23 19:51:41 [debug] 22#22: *1 add cleanup: 00007F92D0BBB040
+2023/01/23 19:51:41 [debug] 22#22: *1 http static fd: 4
+2023/01/23 19:51:41 [debug] 22#22: *1 http set discard body
+2023/01/23 19:51:41 [debug] 22#22: *1 HTTP/1.1 200 OK
+Server: openresty/1.21.4.1
+Date: Mon, 23 Jan 2023 19:51:41 GMT
+Content-Type: text/plain
+Content-Length: 1024
+Last-Modified: Mon, 23 Jan 2023 19:22:35 GMT
+Connection: keep-alive
+ETag: "63cede7b-400"
+Accept-Ranges: bytes
+2023/01/23 19:51:41 [debug] 22#22: *1 write new buf t:1 f:0 00007F92D0BBBB50, pos 00007F92D0BBBB50, size: 246 file: 0, size: 0
+2023/01/23 19:51:41 [debug] 22#22: *1 http write filter: l:0 f:0 s:246
+2023/01/23 19:51:41 [debug] 22#22: *1 http output filter "/nopush_on/1K?"
+2023/01/23 19:51:41 [debug] 22#22: *1 http copy filter: "/nopush_on/1K?"
+2023/01/23 19:51:41 [debug] 22#22: *1 http postpone filter "/nopush_on/1K?" 00007FFC5DB3AE00
+2023/01/23 19:51:41 [debug] 22#22: *1 write old buf t:1 f:0 00007F92D0BBBB50, pos 00007F92D0BBBB50, size: 246 file: 0, size: 0
+2023/01/23 19:51:41 [debug] 22#22: *1 write new buf t:0 f:1 0000000000000000, pos 0000000000000000, size: 0 file: 0, size: 1024
+2023/01/23 19:51:41 [debug] 22#22: *1 http write filter: l:1 f:0 s:1270
+2023/01/23 19:51:41 [debug] 22#22: *1 http write filter limit 2097152
+2023/01/23 19:51:41 [debug] 22#22: *1 tcp_nopush
+2023/01/23 19:51:41 [debug] 22#22: *1 writev: 246 of 246
+2023/01/23 19:51:41 [debug] 22#22: *1 sendfile: @0 1024
+2023/01/23 19:51:41 [debug] 22#22: *1 sendfile: 1024 of 1024 @0
+2023/01/23 19:51:41 [debug] 22#22: *1 http write filter 0000000000000000
+2023/01/23 19:51:41 [debug] 22#22: *1 http copy filter: 0 "/nopush_on/1K?"
+2023/01/23 19:51:41 [debug] 22#22: *1 http finalize request: 0, "/nopush_on/1K?" a:1, c:1
+2023/01/23 19:51:41 [debug] 22#22: *1 set http keepalive handler
+2023/01/23 19:51:41 [debug] 22#22: *1 http close request
+2023/01/23 19:51:41 [debug] 22#22: *1 http log handler
+2023/01/23 19:51:41 [debug] 22#22: *1 run cleanup: 00007F92D0BBB040
+time="2023-01-23T19:51:41+00:00" remote_addr="172.28.0.1" req="GET /nopush_on/1K HTTP/1.1" status="200" req_time="0.000" bytes_sent="1024" up_cache_status="-" up_status="-" up_addr"-" up_resp_time="-" ref="-" ua="curl/7.79.1" scheme="http"
+2023/01/23 19:51:41 [debug] 22#22: *1 file cleanup: fd:4
+2023/01/23 19:51:41 [debug] 22#22: *1 free: 00007F92D0BBA1E0, unused: 8
+2023/01/23 19:51:41 [debug] 22#22: *1 free: 00007F92D0BBB720, unused: 2300
+2023/01/23 19:51:41 [debug] 22#22: *1 free: 00007F92D0BE3590
+2023/01/23 19:51:41 [debug] 22#22: *1 hc free: 0000000000000000
+2023/01/23 19:51:41 [debug] 22#22: *1 hc busy: 0000000000000000 0
+2023/01/23 19:51:41 [debug] 22#22: *1 reusable connection: 1
+2023/01/23 19:51:41 [debug] 22#22: *1 event timer add: 3: 75000:133250739
+2023/01/23 19:51:41 [debug] 22#22: timer delta: 2
+2023/01/23 19:51:41 [debug] 22#22: worker cycle
+2023/01/23 19:51:41 [debug] 22#22: epoll timer: 75000
+2023/01/23 19:51:41 [debug] 22#22: epoll: fd:3 ev:2001 d:00007F92D0AFBB80
+2023/01/23 19:51:41 [debug] 22#22: *1 http keepalive handler
+2023/01/23 19:51:41 [debug] 22#22: *1 malloc: 00007F92D0AF7AD0:1024
+2023/01/23 19:51:41 [debug] 22#22: *1 recv: eof:1, avail:-1
+2023/01/23 19:51:41 [debug] 22#22: *1 recv: fd:3 0 of 1024
+2023/01/23 19:51:41 [info] 22#22: *1 client 172.28.0.1 closed keepalive connection
+2023/01/23 19:51:41 [debug] 22#22: *1 close http connection: 3
+2023/01/23 19:51:41 [debug] 22#22: *1 event timer del: 3: 133250739
+2023/01/23 19:51:41 [debug] 22#22: *1 reusable connection: 0
+2023/01/23 19:51:41 [debug] 22#22: *1 free: 00007F92D0AF7AD0
+2023/01/23 19:51:41 [debug] 22#22: *1 free: 00007F92D0AC06D0, unused: 136
+2023/01/23 19:51:41 [debug] 22#22: timer delta: 63
+2023/01/23 19:51:41 [debug] 22#22: worker cycle
+2023/01/23 19:51:41 [debug] 22#22: epoll timer: -1
